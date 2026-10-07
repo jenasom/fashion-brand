@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWarmStudio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#404040"/>
+      <stop offset="50%" stop-color="#2C2C2C"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <linearGradient id="skinGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#845338"/>
+      <stop offset="60%" stop-color="#693F27"/>
+      <stop offset="100%" stop-color="#4E2B16"/>
+    </linearGradient>
+    <pattern id="ankaraRedSwirl" width="70" height="70" patternUnits="userSpaceOnUse">
+      <rect width="70" height="70" fill="#B81D24"/>
+      <!-- Concentric cream/ivory circles and spirals -->
+      <circle cx="35" cy="35" r="26" fill="none" stroke="#FAF7F0" stroke-width="2.5"/>
+      <circle cx="35" cy="35" r="18" fill="none" stroke="#FAF7F0" stroke-width="2"/>
+      <circle cx="35" cy="35" r="10" fill="none" stroke="#FAF7F0" stroke-width="2.5"/>
+      <circle cx="35" cy="35" r="4" fill="#FAF7F0"/>
+      <!-- Cross geometric rays -->
+      <line x1="0" y1="35" x2="15" y2="35" stroke="#FAF7F0" stroke-width="2"/>
+      <line x1="55" y1="35" x2="70" y2="35" stroke="#FAF7F0" stroke-width="2"/>
+      <line x1="35" y1="0" x2="35" y2="15" stroke="#FAF7F0" stroke-width="2"/>
+      <line x1="35" y1="55" x2="35" y2="70" stroke="#FAF7F0" stroke-width="2"/>
+      <!-- Dot grid accents -->
+      <circle cx="10" cy="10" r="2.5" fill="#FAF7F0"/>
+      <circle cx="60" cy="10" r="2.5" fill="#FAF7F0"/>
+      <circle cx="10" cy="60" r="2.5" fill="#FAF7F0"/>
+      <circle cx="60" cy="60" r="2.5" fill="#FAF7F0"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="600" height="800" fill="url(#bgWarmStudio)"/>
+  <ellipse cx="300" cy="740" rx="140" ry="18" fill="#0A0A0A" opacity="0.4"/>
+
+  <!-- Fitted Mini Skirt -->
+  <path d="M255,540 L240,680 L360,680 L345,540 Z" fill="#B81D24"/>
+  <path d="M255,540 L240,680 L360,680 L345,540 Z" fill="url(#ankaraRedSwirl)"/>
+
+  <!-- Exposed Shapely Thighs -->
+  <path d="M255,675 L250,750 L295,750 L295,675 Z" fill="url(#skinGlow)"/>
+  <path d="M305,675 L305,750 L350,750 L345,675 Z" fill="url(#skinGlow)"/>
+
+  <!-- Voluminous Flared Peplum Skirt Overlayer -->
+  <path d="M255,470 Q210,510 180,560 Q300,590 420,560 Q390,510 345,470 Z" fill="#B81D24"/>
+  <path d="M255,470 Q210,510 180,560 Q300,590 420,560 Q390,510 345,470 Z" fill="url(#ankaraRedSwirl)"/>
+  <!-- Peplum Ruffle Center Split & Shadow Folds -->
+  <path d="M255,470 Q300,530 300,575" fill="none" stroke="#7A0E13" stroke-width="4"/>
+  <path d="M345,470 Q300,530 300,575" fill="none" stroke="#7A0E13" stroke-width="4"/>
+
+  <!-- Smocked Elasticated Midriff / Bodice -->
+  <path d="M250,370 L255,475 L345,475 L350,370 Z" fill="#B81D24"/>
+  <path d="M250,370 L255,475 L345,475 L350,370 Z" fill="url(#ankaraRedSwirl)"/>
+  <!-- Horizontal Smocking Shirring Lines -->
+  <g stroke="#FAF7F0" stroke-width="1.2" opacity="0.75">
+    <line x1="250" y1="385" x2="350" y2="385"/>
+    <line x1="251" y1="400" x2="349" y2="400"/>
+    <line x1="252" y1="415" x2="348" y2="415"/>
+    <line x1="253" y1="430" x2="347" y2="430"/>
+    <line x1="254" y1="445" x2="346" y2="445"/>
+    <line x1="255" y1="460" x2="345" y2="460"/>
+  </g>
+
+  <!-- Dramatic Flared Angel Bell Sleeves -->
+  <path d="M190,360 Q130,420 80,580 Q150,600 210,540 L235,390 Z" fill="#B81D24"/>
+  <path d="M190,360 Q130,420 80,580 Q150,600 210,540 L235,390 Z" fill="url(#ankaraRedSwirl)"/>
+  <!-- Right Bell Sleeve -->
+  <path d="M410,360 Q470,420 520,580 Q450,600 390,540 L365,390 Z" fill="#B81D24"/>
+  <path d="M410,360 Q470,420 520,580 Q450,600 390,540 L365,390 Z" fill="url(#ankaraRedSwirl)"/>
+
+  <!-- Off-the-Shoulder Neckline Band with Ruffle -->
+  <path d="M180,360 Q300,380 420,360 L420,375 Q300,395 180,375 Z" fill="#B81D24"/>
+  <path d="M180,360 Q300,380 420,360 L420,375 Q300,395 180,375 Z" fill="url(#ankaraRedSwirl)"/>
+
+  <!-- Bare Glowing Shoulders, Décolletage & Forearms -->
+  <path d="M220,360 Q300,375 380,360 L350,290 L250,290 Z" fill="url(#skinGlow)"/>
+
+  <!-- Left Arm Raised Gracefully to Face -->
+  <path d="M210,370 Q160,320 200,265" fill="none" stroke="url(#skinGlow)" stroke-width="20" stroke-linecap="round"/>
+  <!-- Gold Bangles on Left Wrist -->
+  <rect x="180" y="320" width="8" height="22" rx="3" fill="#D4AF37" transform="rotate(-35 180 320)"/>
+  <rect x="185" y="325" width="4" height="22" rx="2" fill="#E6EAF0" transform="rotate(-35 185 325)"/>
+  <rect x="190" y="330" width="8" height="22" rx="3" fill="#D4AF37" transform="rotate(-35 190 330)"/>
+  <!-- Manicured Hand near Jaw -->
+  <path d="M205,260 Q195,245 205,235 Q215,245 215,260 Z" fill="url(#skinGlow)"/>
+  <!-- Pink Manicure -->
+  <ellipse cx="203" cy="235" rx="2" ry="4" fill="#F497AC"/>
+
+  <!-- Head & Long Wavy Hair -->
+  <!-- Long Flowing Jet Black Hair -->
+  <path d="M230,190 C190,260 210,420 220,460 C240,400 240,280 250,230 C260,140 340,140 350,230 C360,280 360,400 380,460 C390,420 410,260 370,190 C360,110 240,110 230,190 Z" fill="#0C0A0A"/>
+  <!-- Sleek Hair Baby-Hair Edges -->
+  <path d="M260,150 Q280,140 300,150 Q320,140 340,150" fill="none" stroke="#1C1818" stroke-width="3"/>
+
+  <!-- Face -->
+  <ellipse cx="300" cy="185" rx="34" ry="42" fill="url(#skinGlow)"/>
+
+  <!-- Statement Thick White Frame Glasses (Signature Feature) -->
+  <rect x="252" y="160" width="40" height="30" rx="8" fill="none" stroke="#FAF7F0" stroke-width="4.5"/>
+  <rect x="308" y="160" width="40" height="30" rx="8" fill="none" stroke="#FAF7F0" stroke-width="4.5"/>
+  <line x1="292" y1="172" x2="308" y2="172" stroke="#FAF7F0" stroke-width="4.5"/>
+  <!-- Clear Glass Highlights -->
+  <ellipse cx="272" cy="175" rx="14" ry="10" fill="#FFFFFF" opacity="0.15"/>
+  <ellipse cx="328" cy="175" rx="14" ry="10" fill="#FFFFFF" opacity="0.15"/>
+
+  <!-- Sculpted Gold Fan Earrings -->
+  <path d="M245,195 L230,225 L250,225 Z" fill="#D4AF37"/>
+  <path d="M355,195 L370,225 L350,225 Z" fill="#D4AF37"/>
+
+  <!-- Glamour Makeup & Defined Glossy Lips -->
+  <ellipse cx="272" cy="175" rx="3.5" ry="3" fill="#1C1818"/>
+  <ellipse cx="328" cy="175" rx="3.5" ry="3" fill="#1C1818"/>
+  <!-- Voluminous Eyelashes -->
+  <path d="M264,168 Q272,164 280,168" fill="none" stroke="#000" stroke-width="2.5"/>
+  <path d="M320,168 Q328,164 336,168" fill="none" stroke="#000" stroke-width="2.5"/>
+  <!-- Ombre Glossy Lips -->
+  <ellipse cx="300" cy="208" rx="13" ry="7" fill="#5E2A1E"/>
+  <ellipse cx="300" cy="208" rx="9" ry="4" fill="#B35D4D"/>
+  <ellipse cx="300" cy="207" rx="5" ry="1.5" fill="#FAF7F0" opacity="0.7"/>
+
+  <!-- Editorial Signature Tag -->
+  <g transform="translate(40, 750)">
+    <text font-family="'Cormorant Garamond', Georgia, serif" font-size="16" letter-spacing="4" fill="#FAF7F0" font-weight="600" text-transform="uppercase">The Crimson Peplum Mini</text>
+    <text y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" fill="#D1C4B2" text-transform="uppercase">Off-Shoulder Ankara Wax Print with Flared Bell Sleeves</text>
+  </g>
+</svg>

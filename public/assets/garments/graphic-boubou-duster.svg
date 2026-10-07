@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBE3D5"/>
+      <stop offset="50%" stop-color="#DDD3C1"/>
+      <stop offset="100%" stop-color="#CFC4B0"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5A3825"/>
+      <stop offset="60%" stop-color="#442819"/>
+      <stop offset="100%" stop-color="#2E1B10"/>
+    </linearGradient>
+    <linearGradient id="wineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7A1822"/>
+      <stop offset="50%" stop-color="#5C1018"/>
+      <stop offset="100%" stop-color="#420B11"/>
+    </linearGradient>
+    <pattern id="tribalGeo" width="60" height="80" patternUnits="userSpaceOnUse">
+      <rect width="60" height="80" fill="#161616"/>
+      <!-- Off-white geometric shapes -->
+      <polygon points="10,10 50,10 30,35" fill="#FAF6EE"/>
+      <circle cx="30" cy="55" r="14" fill="#FAF6EE"/>
+      <circle cx="30" cy="55" r="7" fill="#161616"/>
+      <rect x="5" y="42" width="10" height="26" fill="#7A1822"/>
+      <rect x="45" y="42" width="10" height="26" fill="#7A1822"/>
+      <polygon points="0,0 20,0 0,20" fill="#FAF6EE"/>
+      <polygon points="60,0 40,0 60,20" fill="#FAF6EE"/>
+      <polygon points="0,80 20,80 0,60" fill="#FAF6EE"/>
+      <polygon points="60,80 40,80 60,60" fill="#FAF6EE"/>
+      <!-- Crossbars -->
+      <line x1="0" y1="40" x2="60" y2="40" stroke="#7A1822" stroke-width="3"/>
+    </pattern>
+    <pattern id="stripedBraid" width="20" height="40" patternUnits="userSpaceOnUse">
+      <rect width="20" height="40" fill="#141414"/>
+      <rect x="2" y="0" width="4" height="40" fill="#7A1822"/>
+      <rect x="8" y="0" width="4" height="40" fill="#FAF6EE"/>
+      <rect x="14" y="0" width="4" height="40" fill="#7A1822"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="600" height="800" fill="url(#bgGlow)"/>
+
+  <!-- Atelier Arch Ambient Light & Palm Leaves -->
+  <path d="M520,100 Q460,400 550,750" fill="none" stroke="#CBB99E" stroke-width="80" opacity="0.4"/>
+  <g opacity="0.35">
+    <path d="M70,240 Q130,220 200,280" fill="none" stroke="#3D4B39" stroke-width="12" stroke-linecap="round"/>
+    <path d="M50,300 Q140,290 190,360" fill="none" stroke="#3D4B39" stroke-width="14" stroke-linecap="round"/>
+    <path d="M80,380 Q160,370 210,430" fill="none" stroke="#3D4B39" stroke-width="12" stroke-linecap="round"/>
+    <path d="M520,320 Q460,300 400,360" fill="none" stroke="#3D4B39" stroke-width="12" stroke-linecap="round"/>
+    <path d="M550,420 Q470,410 410,480" fill="none" stroke="#3D4B39" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- Soft Shadow -->
+  <ellipse cx="300" cy="760" rx="190" ry="25" fill="#000000" opacity="0.18"/>
+
+  <!-- Flowing Floor-Length Kimono Duster Back/Base -->
+  <path d="M210,180 L130,340 L110,740 L490,740 L470,340 L390,180 Z" fill="#161616"/>
+  <path d="M210,180 L130,340 L110,740 L490,740 L470,340 L390,180 Z" fill="url(#tribalGeo)" opacity="0.95"/>
+
+  <!-- Kimono Flared Batwing Sleeves -->
+  <path d="M220,190 L90,380 L140,480 L230,320 Z" fill="url(#tribalGeo)"/>
+  <path d="M380,190 L510,380 L460,480 L370,320 Z" fill="url(#tribalGeo)"/>
+  <!-- Wine / Striped Sleeve Cuffs -->
+  <polygon points="90,380 140,480 160,460 110,360" fill="url(#wineGrad)"/>
+  <polygon points="510,380 460,480 440,460 490,360" fill="url(#wineGrad)"/>
+
+  <!-- Inner Column: Black Jumpsuit / Shift Underlayer -->
+  <path d="M260,220 L250,735 L350,735 L340,220 Z" fill="#121212"/>
+
+  <!-- Dramatic Center Vertical Striped Lapels (Signature Feature) -->
+  <path d="M260,180 L250,740 L285,740 L290,260 Z" fill="url(#wineGrad)"/>
+  <path d="M265,180 L255,740 L275,740 L285,260 Z" fill="url(#stripedBraid)"/>
+
+  <path d="M340,180 L350,740 L315,740 L310,260 Z" fill="url(#wineGrad)"/>
+  <path d="M335,180 L345,740 L325,740 L315,260 Z" fill="url(#stripedBraid)"/>
+
+  <!-- Center Placket Vertical White Dot Dash Accents -->
+  <g fill="#FAF6EE" opacity="0.9">
+    <rect x="296" y="270" width="8" height="18"/>
+    <rect x="296" y="305" width="8" height="18"/>
+    <rect x="296" y="340" width="8" height="18"/>
+    <rect x="296" y="375" width="8" height="18"/>
+    <rect x="296" y="410" width="8" height="18"/>
+    <rect x="296" y="445" width="8" height="18"/>
+    <rect x="296" y="480" width="8" height="18"/>
+    <rect x="296" y="515" width="8" height="18"/>
+    <rect x="296" y="550" width="8" height="18"/>
+    <rect x="296" y="585" width="8" height="18"/>
+    <rect x="296" y="620" width="8" height="18"/>
+    <rect x="296" y="655" width="8" height="18"/>
+    <rect x="296" y="690" width="8" height="18"/>
+  </g>
+
+  <!-- Neck & Décolletage -->
+  <path d="M275,150 L270,225 Q300,240 330,225 L325,150 Z" fill="url(#skinGrad)"/>
+  <!-- Gold Pendant Necklace -->
+  <circle cx="300" cy="210" r="4.5" fill="#D4AF37"/>
+  <path d="M280,180 Q300,212 320,180" fill="none" stroke="#D4AF37" stroke-width="1.8"/>
+
+  <!-- Hands / Wrists -->
+  <path d="M125,320 Q105,305 95,315 Q105,335 125,330 Z" fill="url(#skinGrad)"/>
+  <circle cx="120" cy="328" r="4" fill="#D4AF37"/>
+  <path d="M475,320 Q495,305 505,315 Q495,335 475,330 Z" fill="url(#skinGrad)"/>
+  <circle cx="480" cy="328" r="4" fill="#D4AF37"/>
+
+  <!-- Head & Radiant Face -->
+  <!-- Sleek Hair Volume -->
+  <path d="M250,110 C240,40 360,40 350,110 C365,160 360,200 350,220 C340,190 340,140 340,120 C340,100 260,100 260,120 C260,140 260,190 250,220 C240,200 235,160 250,110 Z" fill="#100E0E"/>
+
+  <!-- Face Oval -->
+  <ellipse cx="300" cy="115" rx="36" ry="46" fill="url(#skinGrad)"/>
+
+  <!-- Statement Black Sunglasses -->
+  <path d="M266,100 Q300,98 334,100 L336,115 Q318,124 304,115 Q296,115 282,124 L264,115 Z" fill="#0A0A0A"/>
+  <!-- Sunglass Frames & Bridge -->
+  <ellipse cx="282" cy="110" rx="14" ry="11" fill="#1C1B1B" stroke="#2B2929" stroke-width="2"/>
+  <ellipse cx="318" cy="110" rx="14" ry="11" fill="#1C1B1B" stroke="#2B2929" stroke-width="2"/>
+  <line x1="296" y1="108" x2="304" y2="108" stroke="#333" stroke-width="2"/>
+  <!-- Sunglass Lenses Gradient Highlight -->
+  <ellipse cx="280" cy="108" rx="10" ry="7" fill="#3D3A3A" opacity="0.6"/>
+  <ellipse cx="316" cy="108" rx="10" ry="7" fill="#3D3A3A" opacity="0.6"/>
+
+  <!-- Gold Hoop Earrings -->
+  <ellipse cx="260" cy="125" rx="3" ry="8" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+  <ellipse cx="340" cy="125" rx="3" ry="8" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+
+  <!-- Radiant Smile & Lips -->
+  <path d="M284,136 Q300,148 316,136 Q300,143 284,136 Z" fill="#7D2328"/>
+  <path d="M287,138 Q300,146 313,138" fill="none" stroke="#FAF6EE" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Editorial Signature Tag -->
+  <g transform="translate(40, 750)">
+    <text font-family="'Cormorant Garamond', Georgia, serif" font-size="16" letter-spacing="4" fill="#4A443A" font-weight="600" text-transform="uppercase">The Grand Boubou Kimono</text>
+    <text y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" fill="#7A7060" text-transform="uppercase">Geometric Graphic Silk & Cotton Duster</text>
+  </g>
+</svg>

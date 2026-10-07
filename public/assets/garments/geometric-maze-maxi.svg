@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgStudio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F5D6B"/>
+      <stop offset="50%" stop-color="#3B4652"/>
+      <stop offset="100%" stop-color="#283038"/>
+    </linearGradient>
+    <linearGradient id="skinBronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#845339"/>
+      <stop offset="60%" stop-color="#673F2B"/>
+      <stop offset="100%" stop-color="#4C2B1C"/>
+    </linearGradient>
+    <pattern id="mazePattern" width="90" height="90" patternUnits="userSpaceOnUse">
+      <rect width="90" height="90" fill="#141414"/>
+      <!-- Concentric Circles Motif -->
+      <circle cx="25" cy="25" r="20" fill="none" stroke="#D1B28C" stroke-width="2.5"/>
+      <circle cx="25" cy="25" r="14" fill="none" stroke="#A87950" stroke-width="2"/>
+      <circle cx="25" cy="25" r="8" fill="none" stroke="#D1B28C" stroke-width="2"/>
+      <circle cx="25" cy="25" r="3" fill="#D1B28C"/>
+      <!-- Maze Rectangles Motif -->
+      <rect x="52" y="10" width="32" height="32" fill="none" stroke="#D1B28C" stroke-width="2.5"/>
+      <rect x="58" y="16" width="20" height="20" fill="none" stroke="#A87950" stroke-width="2"/>
+      <rect x="64" y="22" width="8" height="8" fill="#D1B28C"/>
+      <!-- Stepped Triangle Motif -->
+      <polygon points="25,52 45,84 5,84" fill="none" stroke="#D1B28C" stroke-width="2.5"/>
+      <polygon points="25,62 38,80 12,80" fill="none" stroke="#A87950" stroke-width="2"/>
+      <!-- Bottom right labyrinth box -->
+      <rect x="52" y="52" width="34" height="34" fill="none" stroke="#D1B28C" stroke-width="2.5"/>
+      <path d="M57,57 L81,57 L81,81 L63,81 L63,63 L75,63 L75,75" fill="none" stroke="#A87950" stroke-width="1.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="600" height="800" fill="url(#bgStudio)"/>
+
+  <!-- Tiled Studio Floor Line -->
+  <line x1="0" y1="740" x2="600" y2="740" stroke="#252A30" stroke-width="2"/>
+  <ellipse cx="300" cy="745" rx="170" ry="22" fill="#111518" opacity="0.4"/>
+
+  <!-- Voluminous A-Line Maxi Skirt -->
+  <path d="M255,390 L110,730 L490,730 L345,390 Z" fill="#141414"/>
+  <path d="M255,390 L110,730 L490,730 L345,390 Z" fill="url(#mazePattern)"/>
+  <!-- Skirt Drape Shadow Folds -->
+  <path d="M255,390 Q220,560 170,730" fill="none" stroke="#0A0A0A" stroke-width="6" opacity="0.4"/>
+  <path d="M345,390 Q380,560 430,730" fill="none" stroke="#0A0A0A" stroke-width="6" opacity="0.4"/>
+  <path d="M300,390 Q300,560 300,730" fill="none" stroke="#0A0A0A" stroke-width="5" opacity="0.3"/>
+
+  <!-- Bodice Silhouette with Nipped Waist -->
+  <path d="M245,230 L230,340 L255,390 L345,390 L370,340 L355,230 Z" fill="#141414"/>
+  <path d="M245,230 L230,340 L255,390 L345,390 L370,340 L355,230 Z" fill="url(#mazePattern)"/>
+
+  <!-- Tailored Cap Sleeves -->
+  <path d="M245,230 L210,290 L245,310 L255,250 Z" fill="url(#mazePattern)"/>
+  <path d="M355,230 L390,290 L355,310 L345,250 Z" fill="url(#mazePattern)"/>
+
+  <!-- Deep Plunging V-Neckline Cutout -->
+  <path d="M280,230 L300,340 L320,230 Z" fill="url(#skinBronze)"/>
+  <!-- Edge Binding on V-Neck -->
+  <path d="M280,230 L300,340 L320,230" fill="none" stroke="#D1B28C" stroke-width="3"/>
+
+  <!-- Bare Arms with Hand in Pocket (Left) and Graceful Pose (Right) -->
+  <!-- Left Arm going into pocket -->
+  <path d="M225,295 Q190,370 235,465" fill="none" stroke="url(#skinBronze)" stroke-width="26" stroke-linecap="round"/>
+  <!-- Right Arm extended -->
+  <path d="M375,295 Q430,360 480,290" fill="none" stroke="url(#skinBronze)" stroke-width="24" stroke-linecap="round"/>
+  <!-- Right Hand -->
+  <path d="M480,290 Q500,270 490,260 Q475,265 470,285" fill="url(#skinBronze)"/>
+
+  <!-- Neck & Collarbones -->
+  <path d="M285,190 L275,235 Q300,245 325,235 L315,190 Z" fill="url(#skinBronze)"/>
+  <path d="M285,225 Q300,235 315,225" fill="none" stroke="#4C2B1C" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Head & Profile Turn -->
+  <ellipse cx="300" cy="155" rx="34" ry="42" fill="url(#skinBronze)"/>
+
+  <!-- Elaborate Sculptural Matching Headwrap (Gele/Turban) -->
+  <path d="M260,140 C240,60 360,60 340,140 C355,100 360,60 330,45 C300,35 270,45 250,75 C240,95 245,120 260,140 Z" fill="#141414"/>
+  <path d="M260,140 C240,60 360,60 340,140 C355,100 360,60 330,45 C300,35 270,45 250,75 C240,95 245,120 260,140 Z" fill="url(#mazePattern)"/>
+  <!-- Headwrap Fold Highlights -->
+  <path d="M255,115 Q300,90 345,115" fill="none" stroke="#D1B28C" stroke-width="2.5"/>
+  <path d="M265,85 Q300,65 335,85" fill="none" stroke="#D1B28C" stroke-width="2.5"/>
+
+  <!-- Large Silver Statement Hoop Earrings -->
+  <ellipse cx="265" cy="180" rx="4" ry="16" fill="none" stroke="#E6EAF0" stroke-width="2.5"/>
+  <ellipse cx="335" cy="180" rx="4" ry="16" fill="none" stroke="#E6EAF0" stroke-width="2.5"/>
+
+  <!-- Chic Dark Sunglasses -->
+  <path d="M272,145 Q300,142 328,145 L328,158 Q315,168 303,158 Q295,158 282,168 L272,158 Z" fill="#111111"/>
+  <ellipse cx="286" cy="152" rx="12" ry="9" fill="#1F1F1F" stroke="#333" stroke-width="1.5"/>
+  <ellipse cx="314" cy="152" rx="12" ry="9" fill="#1F1F1F" stroke="#333" stroke-width="1.5"/>
+  <!-- Glare -->
+  <line x1="280" y1="149" x2="288" y2="149" stroke="#666" stroke-width="1.5"/>
+  <line x1="308" y1="149" x2="316" y2="149" stroke="#666" stroke-width="1.5"/>
+
+  <!-- Sculpted Jawline & Lips -->
+  <path d="M290,175 Q300,182 310,175" fill="none" stroke="#5C311F" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Editorial Signature Tag -->
+  <g transform="translate(40, 750)">
+    <text font-family="'Cormorant Garamond', Georgia, serif" font-size="16" letter-spacing="4" fill="#E6EAF0" font-weight="600" text-transform="uppercase">The Geometric Maze Maxi</text>
+    <text y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" fill="#A4B3C4" text-transform="uppercase">Architectural V-Neck A-Line Ankara Ballgown</text>
+  </g>
+</svg>

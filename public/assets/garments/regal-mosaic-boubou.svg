@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgRegal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#464648"/>
+      <stop offset="50%" stop-color="#2D2D2F"/>
+      <stop offset="100%" stop-color="#1B1B1C"/>
+    </linearGradient>
+    <linearGradient id="skinDeep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#603722"/>
+      <stop offset="60%" stop-color="#482514"/>
+      <stop offset="100%" stop-color="#321609"/>
+    </linearGradient>
+    <pattern id="mosaicGeo" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="#1C1818"/>
+      <!-- Cream/Beige crosshatch base -->
+      <path d="M0,0 L80,80 M80,0 L0,80" stroke="#CBBBA6" stroke-width="1" opacity="0.6"/>
+      <rect x="5" y="5" width="30" height="30" fill="none" stroke="#D1C4B2" stroke-width="1.5"/>
+      <rect x="45" y="45" width="30" height="30" fill="none" stroke="#D1C4B2" stroke-width="1.5"/>
+      <!-- Crimson Red Mosaic Bands -->
+      <polygon points="40,0 80,40 40,80 0,40" fill="#8E1D24" opacity="0.85"/>
+      <polygon points="40,10 70,40 40,70 10,40" fill="#B32B33" opacity="0.9"/>
+      <polygon points="40,20 60,40 40,60 20,40" fill="#1C1818"/>
+      <!-- Black diamond center accent -->
+      <circle cx="40" cy="40" r="5" fill="#FAF6EE"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Vignette Background -->
+  <rect width="600" height="800" fill="url(#bgRegal)"/>
+
+  <!-- Dramatic Ambient Light Cone -->
+  <ellipse cx="300" cy="400" rx="220" ry="360" fill="#FFFFFF" opacity="0.04"/>
+  <ellipse cx="300" cy="740" rx="160" ry="20" fill="#0A0A0A" opacity="0.5"/>
+
+  <!-- Exposed Slender Leg (High Thigh Slit Feature) -->
+  <path d="M330,420 Q350,560 340,700 L365,700 Q380,560 350,420 Z" fill="url(#skinDeep)"/>
+  <!-- White Strappy Heeled Sandal -->
+  <rect x="338" y="695" width="28" height="6" fill="#FAF6EE"/>
+  <rect x="342" y="701" width="6" height="28" fill="#FAF6EE"/>
+  <ellipse cx="352" cy="730" rx="16" ry="6" fill="#FAF6EE"/>
+
+  <!-- Flowing Batwing Boubou Gown Body -->
+  <path d="M220,240 L120,400 L180,740 L450,740 L490,400 L380,240 Z" fill="#1C1818"/>
+  <path d="M220,240 L120,400 L180,740 L450,740 L490,400 L380,240 Z" fill="url(#mosaicGeo)"/>
+
+  <!-- High Front Slit Opening with Crimson Lining -->
+  <path d="M320,410 L320,740 L370,740 L345,410 Z" fill="#6A1016"/>
+
+  <!-- Central Regal Crimson Band Placket -->
+  <path d="M280,240 L280,740 L320,740 L320,240 Z" fill="#8E1D24"/>
+  <path d="M285,240 L285,740 L315,740 L315,240 Z" fill="url(#mosaicGeo)"/>
+
+  <!-- Extended Batwing Sleeves -->
+  <path d="M220,240 L110,380 L180,480 L230,340 Z" fill="url(#mosaicGeo)"/>
+  <path d="M380,240 L490,380 L420,480 L370,340 Z" fill="url(#mosaicGeo)"/>
+
+  <!-- Left Graceful Hand Resting on Thigh with Bangles -->
+  <path d="M315,480 Q325,520 335,550" fill="none" stroke="url(#skinDeep)" stroke-width="18" stroke-linecap="round"/>
+  <!-- Stacked Silver/Beaded Bangles -->
+  <rect x="325" y="475" width="18" height="3" fill="#EAEAEA"/>
+  <rect x="325" y="480" width="18" height="3" fill="#C2A676"/>
+  <rect x="325" y="485" width="18" height="3" fill="#EAEAEA"/>
+
+  <!-- Décolletage & V-Neckline -->
+  <path d="M275,190 L265,260 Q300,285 335,260 L325,190 Z" fill="url(#skinDeep)"/>
+
+  <!-- Multi-Strand Layered Pearl & Coral Bead Royal Necklace -->
+  <path d="M270,220 Q300,260 330,220" fill="none" stroke="#FAF6EE" stroke-width="4" stroke-dasharray="6,4"/>
+  <path d="M265,230 Q300,280 335,230" fill="none" stroke="#FAF6EE" stroke-width="4.5" stroke-dasharray="6,4"/>
+  <path d="M260,240 Q300,300 340,240" fill="none" stroke="#FAF6EE" stroke-width="5" stroke-dasharray="7,4"/>
+  <path d="M255,250 Q300,320 345,250" fill="none" stroke="#D1C4B2" stroke-width="4.5" stroke-dasharray="6,4"/>
+
+  <!-- Face & Head -->
+  <ellipse cx="300" cy="170" rx="34" ry="42" fill="url(#skinDeep)"/>
+
+  <!-- Regal Geometric Gele / Headwrap Crown -->
+  <path d="M245,150 C220,80 380,80 355,150 C375,110 380,70 340,50 C300,30 260,50 240,80 C230,105 235,130 245,150 Z" fill="#1C1818"/>
+  <path d="M245,150 C220,80 380,80 355,150 C375,110 380,70 340,50 C300,30 260,50 240,80 C230,105 235,130 245,150 Z" fill="url(#mosaicGeo)"/>
+  <!-- Sculptural Gele Pleat Ribbons -->
+  <path d="M245,120 Q300,95 355,120" fill="none" stroke="#FAF6EE" stroke-width="2.5" opacity="0.8"/>
+  <path d="M255,90 Q300,70 345,90" fill="none" stroke="#FAF6EE" stroke-width="2.5" opacity="0.8"/>
+
+  <!-- Gold Drop Earrings -->
+  <circle cx="262" cy="188" r="4.5" fill="#D4AF37"/>
+  <ellipse cx="262" cy="202" rx="4" ry="8" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="338" cy="188" r="4.5" fill="#D4AF37"/>
+  <ellipse cx="338" cy="202" rx="4" ry="8" fill="none" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Regal Features: Almond Eyes, Defined Brows, Warm Lips -->
+  <path d="M280,158 Q288,154 294,158" fill="none" stroke="#120A05" stroke-width="2.2"/>
+  <path d="M306,158 Q312,154 320,158" fill="none" stroke="#120A05" stroke-width="2.2"/>
+  <ellipse cx="287" cy="164" rx="4.5" ry="3" fill="#120A05"/>
+  <ellipse cx="313" cy="164" rx="4.5" ry="3" fill="#120A05"/>
+  <!-- Nose bridge -->
+  <path d="M300,165 L297,178 Q300,181 303,178" fill="none" stroke="#3A1C0E" stroke-width="1.8"/>
+  <!-- Lips -->
+  <path d="M290,190 Q300,186 310,190 Q300,198 290,190 Z" fill="#823126"/>
+
+  <!-- Editorial Signature Tag -->
+  <g transform="translate(40, 750)">
+    <text font-family="'Cormorant Garamond', Georgia, serif" font-size="16" letter-spacing="4" fill="#FAF6EE" font-weight="600" text-transform="uppercase">The Regal Mosaic Boubou</text>
+    <text y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" fill="#CBBBA6" text-transform="uppercase">Crimson & Noir Grand Batwing Kaftan with Thigh Slit</text>
+  </g>
+</svg>

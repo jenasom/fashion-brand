@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgStudioGrey" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C2C7CC"/>
+      <stop offset="50%" stop-color="#ABB1B8"/>
+      <stop offset="100%" stop-color="#939A0"/>
+    </linearGradient>
+    <linearGradient id="skinWarmTone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E3B27"/>
+      <stop offset="60%" stop-color="#442817"/>
+      <stop offset="100%" stop-color="#2D180B"/>
+    </linearGradient>
+    <pattern id="asookeStripe" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#1C1D1F"/>
+      <!-- Vertical Charcoal Stripe -->
+      <rect x="0" y="0" width="12" height="40" fill="#3A3D42"/>
+      <!-- Bone Accent Stitching -->
+      <line x1="12" y1="0" x2="12" y2="40" stroke="#FAF7F0" stroke-width="1.2" stroke-dasharray="3,2"/>
+      <!-- Center Slate Band -->
+      <rect x="14" y="0" width="12" height="40" fill="#585D64"/>
+      <!-- Thin White Woven Line -->
+      <line x1="26" y1="0" x2="26" y2="40" stroke="#FAF7F0" stroke-width="1.2" stroke-dasharray="3,2"/>
+      <!-- Deep Obsidian Base -->
+      <rect x="28" y="0" width="12" height="40" fill="#141517"/>
+    </pattern>
+    <pattern id="pocketStripeHoriz" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#1C1D1F"/>
+      <rect x="0" y="0" width="40" height="12" fill="#3A3D42"/>
+      <line x1="0" y1="12" x2="40" y2="12" stroke="#FAF7F0" stroke-width="1.2" stroke-dasharray="3,2"/>
+      <rect x="0" y="14" width="40" height="12" fill="#585D64"/>
+      <line x1="0" y1="26" x2="40" y2="26" stroke="#FAF7F0" stroke-width="1.2" stroke-dasharray="3,2"/>
+      <rect x="0" y="28" width="40" height="12" fill="#141517"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Grey Background -->
+  <rect width="600" height="800" fill="url(#bgStudioGrey)"/>
+  <ellipse cx="300" cy="740" rx="150" ry="20" fill="#6B727A" opacity="0.4"/>
+
+  <!-- Tailored Black Trousers & Hands in Pockets Pose -->
+  <path d="M190,570 L170,750 L285,750 L285,630 L315,630 L315,750 L430,750 L410,570 Z" fill="#111214"/>
+  <!-- Trouser Center Crease Lines -->
+  <line x1="228" y1="580" x2="228" y2="750" stroke="#25272B" stroke-width="2"/>
+  <line x1="372" y1="580" x2="372" y2="750" stroke="#25272B" stroke-width="2"/>
+
+  <!-- Inner Black Crewneck Top -->
+  <path d="M260,280 L250,570 L350,570 L340,280 Z" fill="#18181A"/>
+  <!-- Delicate Silver Chain Necklace -->
+  <path d="M275,280 Q300,340 325,280" fill="none" stroke="#D1D5DB" stroke-width="1.6"/>
+  <circle cx="300" cy="342" r="3" fill="#E5E7EB"/>
+
+  <!-- Tailored Woven Aso-Oke Zip Jacket Body -->
+  <!-- Left Side Jacket Body -->
+  <path d="M190,260 L140,580 L292,580 L292,300 L250,260 Z" fill="url(#asookeStripe)"/>
+  <!-- Right Side Jacket Body -->
+  <path d="M410,260 L460,580 L308,580 L308,300 L350,260 Z" fill="url(#asookeStripe)"/>
+
+  <!-- Horizontal Stripe Contrast Patch Pockets -->
+  <rect x="180" y="470" width="80" height="90" fill="url(#pocketStripeHoriz)" stroke="#111" stroke-width="2"/>
+  <rect x="340" y="470" width="80" height="90" fill="url(#pocketStripeHoriz)" stroke="#111" stroke-width="2"/>
+
+  <!-- Center Chrome Metal Zipper Track & Pull Tab -->
+  <rect x="296" y="300" width="8" height="280" fill="#9CA3AF"/>
+  <line x1="300" y1="300" x2="300" y2="580" stroke="#374151" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <!-- Silver Zipper Pull -->
+  <rect x="294" y="565" width="12" height="18" rx="2" fill="#E5E7EB" stroke="#6B7280" stroke-width="1.5"/>
+
+  <!-- Structured Shirt Collar in Solid Noir / Aso-Oke -->
+  <polygon points="250,260 215,315 285,300" fill="#1C1D1F" stroke="#111" stroke-width="1.5"/>
+  <polygon points="350,260 385,315 315,300" fill="#1C1D1F" stroke="#111" stroke-width="1.5"/>
+
+  <!-- Structured Shoulders & Sleeves -->
+  <path d="M190,260 L100,480 L155,590 L185,570 L145,470 L200,320 Z" fill="url(#asookeStripe)"/>
+  <path d="M410,260 L500,480 L445,590 L415,570 L455,470 L400,320 Z" fill="url(#asookeStripe)"/>
+
+  <!-- Handsome Hands with Silver Signet Ring -->
+  <path d="M150,585 Q160,630 170,640" fill="none" stroke="url(#skinWarmTone)" stroke-width="22" stroke-linecap="round"/>
+  <path d="M450,585 Q440,630 430,640" fill="none" stroke="url(#skinWarmTone)" stroke-width="22" stroke-linecap="round"/>
+  <!-- Silver Signet Ring on Right Pinky -->
+  <circle cx="438" cy="625" r="5" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1"/>
+
+  <!-- Neck & Strong Jawline -->
+  <path d="M270,200 L260,285 Q300,295 340,285 L330,200 Z" fill="url(#skinWarmTone)"/>
+  <!-- Adam's Apple & Neck Contouring -->
+  <path d="M295,255 L300,265 L305,255" fill="none" stroke="#2D180B" stroke-width="2"/>
+
+  <!-- Head, Groomed Beard & Short Haircut -->
+  <ellipse cx="300" cy="165" rx="36" ry="46" fill="url(#skinWarmTone)"/>
+  <!-- Clean Fade Hairline -->
+  <path d="M264,150 C264,100 336,100 336,150 C336,160 330,170 330,170 C330,120 270,120 270,170 C270,170 264,160 264,150 Z" fill="#0E0D0E"/>
+  <!-- Neat Beard & Mustache -->
+  <path d="M272,175 Q300,225 328,175 Q320,218 300,220 Q280,218 272,175 Z" fill="#0E0D0E" opacity="0.9"/>
+  <!-- Mustache -->
+  <path d="M286,188 Q300,185 314,188 Q300,194 286,188 Z" fill="#0E0D0E"/>
+
+  <!-- Modern Angular Black Sunglasses -->
+  <rect x="264" y="145" width="30" height="22" rx="4" fill="#0C0D0E" stroke="#1F2937" stroke-width="2"/>
+  <rect x="306" y="145" width="30" height="22" rx="4" fill="#0C0D0E" stroke="#1F2937" stroke-width="2"/>
+  <line x1="294" y1="154" x2="306" y2="154" stroke="#1F2937" stroke-width="3"/>
+  <!-- Subtle Lens Highlights -->
+  <line x1="268" y1="150" x2="280" y2="150" stroke="#4B5563" stroke-width="1.5"/>
+  <line x1="310" y1="150" x2="322" y2="150" stroke="#4B5563" stroke-width="1.5"/>
+
+  <!-- Confident Editorial Pose Tag -->
+  <g transform="translate(40, 750)">
+    <text font-family="'Cormorant Garamond', Georgia, serif" font-size="16" letter-spacing="4" fill="#1F2937" font-weight="600" text-transform="uppercase">The Handwoven Aso-Oke Zip Jacket</text>
+    <text y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" fill="#4B5563" text-transform="uppercase">Bespoke Savile Row Menswear Tailored with Yoruba Loom Stripes</text>
+  </g>
+</svg>

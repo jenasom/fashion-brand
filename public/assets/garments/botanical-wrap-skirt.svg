@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCourtyard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBE3D8"/>
+      <stop offset="50%" stop-color="#DDD3C5"/>
+      <stop offset="100%" stop-color="#CCC0B0"/>
+    </linearGradient>
+    <linearGradient id="skinWarmCocoa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B4931"/>
+      <stop offset="60%" stop-color="#603722"/>
+      <stop offset="100%" stop-color="#462514"/>
+    </linearGradient>
+    <pattern id="botanicalFan" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="#141416"/>
+      <!-- Radiating Ochre & Golden Palm Leaf / Fan Motif -->
+      <path d="M40,75 C20,50 15,30 20,15 C35,20 40,40 40,75 Z" fill="#D19C38"/>
+      <path d="M40,75 C30,45 35,20 40,10 C45,20 50,45 40,75 Z" fill="#F3BF4B"/>
+      <path d="M40,75 C45,40 50,20 65,15 C70,30 65,50 40,75 Z" fill="#D19C38"/>
+      <path d="M40,75 C55,45 70,35 75,25 C75,40 60,60 40,75 Z" fill="#E5AB3A"/>
+      <path d="M40,75 C25,45 10,35 5,25 C5,40 20,60 40,75 Z" fill="#E5AB3A"/>
+      <!-- Fine Leaf Veins -->
+      <line x1="40" y1="75" x2="40" y2="12" stroke="#141416" stroke-width="1.5"/>
+      <line x1="40" y1="75" x2="22" y2="17" stroke="#141416" stroke-width="1.2"/>
+      <line x1="40" y1="75" x2="63" y2="17" stroke="#141416" stroke-width="1.2"/>
+      <!-- Small botanical sprig accent -->
+      <circle cx="10" cy="70" r="3" fill="#D19C38"/>
+      <circle cx="70" cy="70" r="3" fill="#D19C38"/>
+    </pattern>
+  </defs>
+
+  <!-- Sunlit Courtyard Background -->
+  <rect width="600" height="800" fill="url(#bgCourtyard)"/>
+
+  <!-- Terracotta Clay Pot & Potted Strelitzia/Palm Leaves in Background -->
+  <g opacity="0.35">
+    <ellipse cx="100" cy="620" rx="60" ry="80" fill="#995D3F"/>
+    <path d="M90,560 Q50,420 20,380" fill="none" stroke="#2D4A27" stroke-width="14" stroke-linecap="round"/>
+    <path d="M100,560 Q120,390 140,320" fill="none" stroke="#2D4A27" stroke-width="16" stroke-linecap="round"/>
+    <path d="M110,560 Q160,440 200,410" fill="none" stroke="#2D4A27" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="320" cy="755" rx="140" ry="20" fill="#000000" opacity="0.2"/>
+
+  <!-- High-Waisted Wrap Maxi Skirt Body with Floor Sweep -->
+  <path d="M250,380 L230,750 L400,750 L370,470 L340,380 Z" fill="#141416"/>
+  <path d="M250,380 L230,750 L400,750 L370,470 L340,380 Z" fill="url(#botanicalFan)"/>
+
+  <!-- Front Wrap Slit Opening Showing Leg & Sandal -->
+  <path d="M330,470 L340,750 L380,750 L370,470 Z" fill="url(#skinWarmCocoa)"/>
+  <!-- Minimalist Black Leather Strap Sandal -->
+  <rect x="345" y="740" width="22" height="4" fill="#141416"/>
+
+  <!-- Sculptural Wrap Waist Tie Knot with Draped Cascading Sash -->
+  <!-- Knot at Right Hip -->
+  <circle cx="340" cy="385" r="16" fill="#D19C38" stroke="#141416" stroke-width="2"/>
+  <!-- Cascading Sash Waterfall Drape -->
+  <path d="M340,385 Q375,440 370,520 Q350,530 335,460 Z" fill="#D19C38"/>
+  <path d="M340,385 Q375,440 370,520 Q350,530 335,460 Z" fill="url(#botanicalFan)"/>
+  <path d="M345,395 Q385,460 380,550 Q365,555 350,480 Z" fill="#E5AB3A"/>
+  <path d="M345,395 Q385,460 380,550 Q365,555 350,480 Z" fill="url(#botanicalFan)"/>
+
+  <!-- Minimalist Jet Black Square-Neck Fitted Bodice Top -->
+  <path d="M260,250 L250,385 L340,385 L330,250 Z" fill="#141416"/>
+  <!-- Square-Neck Straps -->
+  <rect x="260" y="220" width="16" height="35" fill="#141416"/>
+  <rect x="314" y="220" width="16" height="35" fill="#141416"/>
+
+  <!-- Bare Glowing Neck, Chest & Slender Arms -->
+  <path d="M276,220 L276,252 Q295,255 314,252 L314,220 Z" fill="url(#skinWarmCocoa)"/>
+  <!-- Dainty Gold Cross / Pendant Chain -->
+  <path d="M280,210 Q295,235 310,210" fill="none" stroke="#D19C38" stroke-width="1.4"/>
+  <circle cx="295" cy="236" r="2.5" fill="#F3BF4B"/>
+
+  <!-- Left Arm Holding Black Mini Leather Handbag -->
+  <path d="M255,245 Q210,360 215,480" fill="none" stroke="url(#skinWarmCocoa)" stroke-width="18" stroke-linecap="round"/>
+  <!-- Gold Bangles on Left Wrist -->
+  <rect x="210" y="440" width="14" height="3" fill="#D19C38"/>
+  <rect x="210" y="445" width="14" height="3" fill="#D19C38"/>
+  <!-- Black Luxury Mini Handbag with Gold Turnlock -->
+  <rect x="195" y="490" width="46" height="36" rx="4" fill="#141416" stroke="#252525" stroke-width="1.5"/>
+  <path d="M208,490 Q218,460 228,490" fill="none" stroke="#141416" stroke-width="3"/>
+  <rect x="214" y="505" width="8" height="6" rx="1" fill="#F3BF4B"/>
+
+  <!-- Right Arm Resting Lightly on Hip -->
+  <path d="M335,245 Q365,330 345,395" fill="none" stroke="url(#skinWarmCocoa)" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Head & Gorgeous Profile Symmetry -->
+  <ellipse cx="295" cy="155" rx="30" ry="38" fill="url(#skinWarmCocoa)"/>
+
+  <!-- Sculpted Matching Botanical Print Headwrap (Gele/Turban) -->
+  <path d="M255,145 C235,70 355,70 335,145 C350,110 355,75 320,55 C285,40 255,55 245,85 C240,110 245,130 255,145 Z" fill="#141416"/>
+  <path d="M255,145 C235,70 355,70 335,145 C350,110 355,75 320,55 C285,40 255,55 245,85 C240,110 245,130 255,145 Z" fill="url(#botanicalFan)"/>
+  <path d="M255,120 Q295,95 335,120" fill="none" stroke="#D19C38" stroke-width="2.5"/>
+
+  <!-- Gold Bar / Drop Earrings -->
+  <rect x="260" y="165" width="4" height="12" rx="1" fill="#F3BF4B"/>
+  <rect x="330" y="165" width="4" height="12" rx="1" fill="#F3BF4B"/>
+
+  <!-- Elegant Facial Features & Radiant Complexion -->
+  <ellipse cx="283" cy="148" rx="4" ry="2.5" fill="#140D09"/>
+  <ellipse cx="307" cy="148" rx="4" ry="2.5" fill="#140D09"/>
+  <!-- Defined Eyebrows -->
+  <path d="M276,143 Q284,139 292,143" fill="none" stroke="#0E0805" stroke-width="2"/>
+  <path d="M298,143 Q306,139 314,143" fill="none" stroke="#0E0805" stroke-width="2"/>
+  <!-- Warm Terracotta Lips -->
+  <ellipse cx="295" cy="172" rx="9" ry="4.5" fill="#6A3125"/>
+
+  <!-- Editorial Signature Tag -->
+  <g transform="translate(40, 750)">
+    <text font-family="'Cormorant Garamond', Georgia, serif" font-size="16" letter-spacing="4" fill="#3D3830" font-weight="600" text-transform="uppercase">The Botanical Fan Wrap Skirt</text>
+    <text y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" fill="#786E5E" text-transform="uppercase">High-Waisted Golden Ochre Wrap Maxi with Structured Noir Bodice</text>
+  </g>
+</svg>
