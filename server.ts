@@ -4,25 +4,16 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
 
-import { authRouter } from './server/routes/authRoutes';
-import { productRouter } from './server/routes/productRoutes';
-import { cartRouter } from './server/routes/cartRoutes';
-import { orderRouter } from './server/routes/orderRoutes';
-import { paymentRouter } from './server/routes/paymentRoutes';
-import { academyRouter } from './server/routes/academyRoutes';
-import { tutoringRouter } from './server/routes/tutoringRoutes';
-import { certificateRouter } from './server/routes/certificateRoutes';
-import { adminRouter } from './server/routes/adminRoutes';
-import { notificationRouter } from './server/routes/notificationRoutes';
+import { createApiApp } from './server/app';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function startServer() {
-  const app = express();
+  const app = createApiApp();
 
   // Parse command line arguments for --port or fallback to 3000
-  let PORT = 3000;
+  let PORT = Number(process.env.PORT) || 3000;
   for (let i = 0; i < process.argv.length; i++) {
     if (process.argv[i] === '--port' && process.argv[i + 1]) {
       const parsed = parseInt(process.argv[i + 1], 10);
@@ -34,30 +25,6 @@ async function startServer() {
   }
 
   const server = http.createServer(app);
-
-  app.use(express.json());
-
-  // Mount API routers
-  app.use('/api', authRouter);
-  app.use('/api', productRouter);
-  app.use('/api', cartRouter);
-  app.use('/api', orderRouter);
-  app.use('/api', paymentRouter);
-  app.use('/api', academyRouter);
-  app.use('/api', tutoringRouter);
-  app.use('/api', certificateRouter);
-  app.use('/api', adminRouter);
-  app.use('/api', notificationRouter);
-
-  // Health check endpoint
-  app.get('/api/health', (_req, res) => {
-    res.json({
-      status: 'healthy',
-      platform: 'ATELIER & ACADÉMIE',
-      port: PORT,
-      time: new Date().toISOString()
-    });
-  });
 
   const isProduction = process.env.NODE_ENV === 'production';
 

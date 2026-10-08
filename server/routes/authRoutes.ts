@@ -1,18 +1,20 @@
+import { createDemoSessions } from '../services/demoSessions';
 ﻿import { Router, Request, Response, NextFunction } from 'express';
-import { randomBytes, scryptSync, timingSafeEqual } from 'node:crypto';
+import { scryptSync, timingSafeEqual } from 'node:crypto';
 import { z } from 'zod';
 import { store } from '../db/store';
 import { UserRole } from '../../src/types/index';
 
 export const authRouter = Router();
-const sessions = new Map<string, { userId: string; expires: number }>();
+
 // Public demonstration credentials, not production accounts.
 const demoIds = new Set(['usr_customer_1', 'usr_student_1', 'usr_instructor_1', 'usr_instructor_2', 'usr_instructor_3', 'usr_admin_1']);
 const demoHash = scryptSync('AtelierDemo26!', 'atelier-local-demo', 64);
+const sessions = createDemoSessions(process.env.SESSION_SECRET || demoHash.toString('hex'));
 export function sessionUser(req: Request) {
   const token = req.headers.authorization?.replace(/^Bearer /, '') || '';
-  const session = sessions.get(token);
-  if (!session || session.expires < Date.now()) { sessions.delete(token); return undefined; }
+  const session = sessions.read(token);
+  if (!session || !demoIds.has(session.userId)) return undefined;
   return store.getUserById(session.userId);
 }
 export function requireRole(role: UserRole) {
@@ -30,8 +32,7 @@ authRouter.post('/login', (req, res): void => {
   const user = store.getUserByEmail(parsed.data.email.trim().toLowerCase());
   const valid = timingSafeEqual(scryptSync(parsed.data.password, 'atelier-local-demo', 64), demoHash);
   if (!user || !demoIds.has(user.id) || !valid) { res.status(401).json({ error: 'The email or password is incorrect.' }); return; }
-  const token = randomBytes(32).toString('hex');
-  sessions.set(token, { userId: user.id, expires: Date.now() + 8 * 60 * 60 * 1000 });
+  const token = sessions.issue(user.id);
   res.json({ user, token });
 });
 authRouter.get('/me', (req, res): void => {
@@ -40,7 +41,7 @@ authRouter.get('/me', (req, res): void => {
   res.json({ user });
 });
 authRouter.post('/logout', (req, res) => {
-  sessions.delete(req.headers.authorization?.replace(/^Bearer /, '') || '');
+  sessions.revoke(req.headers.authorization?.replace(/^Bearer /, '') || '');
   res.json({ success: true });
 });
 // The former passwordless persona switch and public role registration are disabled.

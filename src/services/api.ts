@@ -22,7 +22,7 @@ async function request(url: string, options: RequestInit = {}) {
   const token = sessionToken.get();
   if (token) headers.set('Authorization', 'Bearer ' + token);
   const response = await fetch(url, { ...options, headers });
-  if (!response.ok) { const body = await response.json().catch(() => ({})); throw new Error(body.error || 'The request failed. Please try again.'); }
+  if (!response.ok) { const body = await response.json().catch(() => ({})); throw new Error(body.error || (response.status === 404 ? 'The login service is unavailable on this deployment. Please try again after the deployment finishes.' : 'The request failed (HTTP ' + response.status + '). Please try again.')); }
   return response;
 }
 
