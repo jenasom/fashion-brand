@@ -9,7 +9,7 @@ import {
   Certificate,
   Review,
   Notification
-} from '../../src/types/index';
+} from '../../src/types/index.js';
 
 export const SEED_USERS: User[] = [
   { id: 'usr_customer_1', email: 'customer@atelierofficial.com', name: 'Amara Okafor', roles: ['CUSTOMER'], createdAt: '2026-10-07T00:00:00Z' },

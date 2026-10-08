@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { store } from '../db/store';
+import { store } from '../db/store.js';
 
 export const cartRouter = Router();
 

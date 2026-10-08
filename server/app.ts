@@ -1,14 +1,14 @@
 import express from 'express';
-import { authRouter } from './routes/authRoutes';
-import { productRouter } from './routes/productRoutes';
-import { cartRouter } from './routes/cartRoutes';
-import { orderRouter } from './routes/orderRoutes';
-import { paymentRouter } from './routes/paymentRoutes';
-import { academyRouter } from './routes/academyRoutes';
-import { tutoringRouter } from './routes/tutoringRoutes';
-import { certificateRouter } from './routes/certificateRoutes';
-import { adminRouter } from './routes/adminRoutes';
-import { notificationRouter } from './routes/notificationRoutes';
+import { authRouter } from './routes/authRoutes.js';
+import { productRouter } from './routes/productRoutes.js';
+import { cartRouter } from './routes/cartRoutes.js';
+import { orderRouter } from './routes/orderRoutes.js';
+import { paymentRouter } from './routes/paymentRoutes.js';
+import { academyRouter } from './routes/academyRoutes.js';
+import { tutoringRouter } from './routes/tutoringRoutes.js';
+import { certificateRouter } from './routes/certificateRoutes.js';
+import { adminRouter } from './routes/adminRoutes.js';
+import { notificationRouter } from './routes/notificationRoutes.js';
 
 
 export function createApiApp() {

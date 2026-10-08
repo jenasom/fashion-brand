@@ -1,9 +1,9 @@
-import { createDemoSessions } from '../services/demoSessions';
+import { createDemoSessions } from '../services/demoSessions.js';
 ﻿import { Router, Request, Response, NextFunction } from 'express';
 import { scryptSync, timingSafeEqual } from 'node:crypto';
 import { z } from 'zod';
-import { store } from '../db/store';
-import { UserRole } from '../../src/types/index';
+import { store } from '../db/store.js';
+import { UserRole } from '../../src/types/index.js';
 
 export const authRouter = Router();
 

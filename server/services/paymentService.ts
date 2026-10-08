@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import { store } from '../db/store';
+import { store } from '../db/store.js';
 
 export interface PaymentIntentOptions {
   amount: number; // in lowest currency unit or major unit

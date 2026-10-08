@@ -1,6 +1,6 @@
-import { requireOwner } from './authRoutes';
+import { requireOwner } from './authRoutes.js';
 import { Router, Request, Response } from 'express';
-import { store } from '../db/store';
+import { store } from '../db/store.js';
 
 export const academyRouter = Router();
 

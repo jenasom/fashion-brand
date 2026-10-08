@@ -1,3 +1,3 @@
-import { createApiApp } from '../server/app';
+import { createApiApp } from '../server/app.js';
 
 export default createApiApp();

@@ -18,7 +18,7 @@ import {
   Review,
   Notification,
   AuditLog
-} from '../../src/types/index';
+} from '../../src/types/index.js';
 import {
   SEED_USERS,
   SEED_CATEGORIES,
@@ -29,7 +29,7 @@ import {
   SEED_CLASSES,
   SEED_CERTIFICATES,
   SEED_REVIEWS
-} from './seedData';
+} from './seedData.js';
 
 class Store {
   private users: Map<string, User> = new Map();

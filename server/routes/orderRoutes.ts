@@ -1,8 +1,8 @@
-import { requireOwner } from './authRoutes';
+import { requireOwner } from './authRoutes.js';
 import { Router, Request, Response } from 'express';
-import { requireRole, sessionUser } from './authRoutes';
-import { store } from '../db/store';
-import { OrderStatus } from '../../src/types/index';
+import { requireRole, sessionUser } from './authRoutes.js';
+import { store } from '../db/store.js';
+import { OrderStatus } from '../../src/types/index.js';
 
 export const orderRouter = Router();
 

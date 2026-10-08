@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
-import { requireRole } from './authRoutes';
-import { store } from '../db/store';
-import { Product, Course, ClassSession } from '../../src/types/index';
+import { requireRole } from './authRoutes.js';
+import { store } from '../db/store.js';
+import { Product, Course, ClassSession } from '../../src/types/index.js';
 
 export const adminRouter = Router();
 
